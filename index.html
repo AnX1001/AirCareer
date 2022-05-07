@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/accordion.css">
+  <link rel="stylesheet" href="./style/content.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+  </style>
+  <title>Karriere: flyvert</title>
+</head>
+<header>
+  <nav>
+    <ul>
+      <li>Hjem</li>
+      <li>Kontakt oss</li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div class="super-container">
+    <div class="wrapper-accord-card">
+      <section class="wrapper-fact-box-image">
+        <article class="fact-box">
+          <h2>Nye flyverter søkes!</h2>
+          <p>
+            Vi søker positive, blide personligheter som ønsker å være del av et internasjonalt team. Vi selekterer
+            fortløpende kandidater i juli med oppstart av opplæring 2.august. <br><br>Det kreves bestått
+            personlighetstest, sikkerhetsjekk og fysiske krav for å deltakelse av opplæringskurset.
+          </p>
+          <figure>
+            <img class="article-image" src="../assets/attendant.jpg" alt="attendant" />
+          </figure>
+          <section class="section-dialog-form">
+            <button class="apply-button">Søk her</button>
+            <dialog class="dialog-form" open>
+              <h2>Vennligst skriv en kort søknad, takk</h2>
+              <form action="">
+                <button class="cancel-button">Avbryt</button>
+                <legend class="contact-info">Kontaktopplysninger
+                  <label for="name">Fornavn:</label>
+                  <input type="text" placeholder="Fornavn og etternavn" id="name" for="name">
+                  <label for="email">E-post:</label>
+                  <input type="email" id="email" for="email">
+                  <label for="linkedIn">Din LinkedIn-profil</label>
+                  <input type="text" placeholder="Lim inn url til din LinkedIn-profil">
+                </legend>
+
+                <legend class="legend-cover-letter">Søknad</legend>
+                <textarea name="text-area" id="text-area" cols="40" rows="10"
+                  placeholder="Vennligst nevn 3 grunner til at du vil bli en flyvert..."></textarea>
+
+              </form>
+
+              <button class="submit-application">Send søknad</button>
+
+            </dialog>
+          </section>
+
+        </article>
+
+      </section>
+      <div class="container-tweet">
+        <a class="twitter-timeline" href="https://twitter.com/sas" data-tweet-limit="1" data-cards="hidden"
+          data-theme="dark">
+        </a>
+      </div>
+      <section class="accordion-wrapper">
+        <details class="accordion">
+          <summary>Hva er de fysisk kravene?</summary>
+          <i>På grunn av sikkermessige hensyn må søkeren være minst 160 cm. I tillegg søkeren være i god fysisk
+            form.</i>
+
+        </details>
+        <details class="accordion">
+          <summary>Er det krav om beherskelse av fremmedspråk?</summary>
+          <i>Arbeidsspråket er primært engelsk, men det vil være fordelaktig å kunne flere språk.</i>
+        </details>
+        <details class="accordion">
+          <summary>Smittevern</summary>
+          <i>Vi har strengte tiltak for smittervern under hele prosessen.</i>
+        </details>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</body>
+
+</section>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="./script/index.js"></script>
+
+</html>

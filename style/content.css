@@ -1,0 +1,41 @@
+/* content styling */
+
+.wrapper-fact-box-image .fact-box {
+  width: clamp(150px, 50vw, 345px);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-light);
+  border-radius: var(--elements-border-radius);
+  background: white;
+  height: fit-content;
+}
+
+.wrapper-fact-box-image .fact-box h2 {
+  margin-bottom: var(--spacing-light);
+}
+
+.wrapper-fact-box-image .article-image {
+  width: 100%;
+  margin-top: var(--spacing-light);
+  max-height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--elements-border-radius);
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-fact-box-image .article-image {
+        height: auto;
+        max-height: 600px; 
+        object-fit: cover;
+    }
+}
+.wrapper-fact-box-image {
+  display: flex;
+  margin-bottom: var(--spacing-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-fact-box-image .fact-box {
+    width: 100%;
+  }
+}

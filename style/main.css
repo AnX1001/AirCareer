@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* css variables */
+:root {
+  --primary-background-color: rgb(22, 34, 46);
+  --secondary-background-color: rgb(173, 216, 230);
+  --primary-UI-element-color: black;
+  --spacing-light: 14px;
+  --spacing-large: 70px;
+  --spacing-medium: 30px;
+  --spacing-larger: 95px;
+  --negative-spacing-light: -80px;
+  --font-size-small: 12px;
+  --fontSize-medium: 15px;
+  --fontSize-large: 18px;
+  --fontSize-larger: 22px;
+  --elements-border-radius: 2px;
+  --image-clamp-size: clamp(245px, 28vw, 250px);
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06), 0 6px 6px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.super-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.wrapper-accord-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+}
+
+aside,
+details,
+button {
+  box-shadow: var(--box-shadow);
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(
+    130deg,
+    var(--primary-background-color),
+    var(--secondary-background-color)
+  );
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: grid;
+  align-items: center;
+}
+
+nav {
+  font-size: var(--fontSize-navigation);
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: var(--spacing-medium);
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+/* dialog form styling */
+
+button,
+.section-dialog-form .apply-button {
+  border: none;
+  margin-top: var(--spacing-light);
+  margin-bottom: var(--spacing-light);
+  padding: var(--spacing-light);
+  border-radius: var(--elements-border-radius);
+}
+
+button,
+.apply-button:hover {
+  cursor: pointer;
+}
+
+.dialog-form {
+  position: absolute;
+  top: 0;
+  margin-left: var(--spacing-medium);
+  margin-top: var(--spacing-medium);
+  padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dialog-form {
+    width: 90%;
+    margin: var(--spacing-light);
+  }
+}
+
+.contact-info {
+  display: grid;
+}
+
+input {
+  margin-bottom: var(--spacing-light);
+}
+
+/* SoMe secton styling */
+
+.section-soMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid steelblue;
+}
+
+.container-tweet {
+  margin: var(--spacing-light);
+  max-width: 330px;
+  height: fit-content;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--elements-border-radius);
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-tweet {
+    min-width: 100%;
+    margin: 0px;
+  }
+}
